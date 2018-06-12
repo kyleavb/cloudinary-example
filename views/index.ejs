@@ -1,0 +1,13 @@
+<div class='row'>
+    <div class='col s12'>
+        <h1>Lets Upload some Pictures!!</h1>
+        <a class='btn' href='/upload'>Click Here to Upload!</a>    
+    </div>
+</div>
+<div class='row'>
+    <% images.forEach(function(item){ %>
+        <div class='col s3'>
+            <a href='<%= item %>'>Stuff: <%= item %></a>
+        </div>
+    <% }) %>
+</div>
