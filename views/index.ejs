@@ -5,9 +5,10 @@
     </div>
 </div>
 <div class='row'>
-    <% images.forEach(function(item){ %>
+    <% images.forEach(function(item, i){ %>
+        <% var imgUrl = cloudinary.url(item, {width: 150, height:150}); %>
         <div class='col s3'>
-            <a href='<%= item %>'>Stuff: <%= item %></a>
+            <a href="<%= imgUrl %>">Image <%= i + 1 %>. <img src="<%= imgUrl %>"></a>
         </div>
     <% }) %>
 </div>
