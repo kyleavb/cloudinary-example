@@ -1,0 +1,2 @@
+# Purpose
+This project was created to help illustrate to students how to setup a node server using EJS view engine and to utalize the cloudinary API to show how we can send requets to other API's to reetrieve data and display it top the user.
